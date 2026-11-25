@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Dharmender Singh — B.Tech CSE student, Cloud Computing, Web Development and AI enthusiast." />
+  <title>Dharmender Singh | Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="progress"></div>
+  <div class="cursor-glow"></div>
+
+  <header class="nav-wrap">
+    <nav class="navbar">
+      <a href="#home" class="logo"><span>DS</span> Dharmender</a>
+      <button class="menu-btn" aria-label="Open menu"><span></span><span></span><span></span></button>
+      <div class="nav-links">
+        <a href="#home" class="active">Home</a>
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#certificates">Certificates</a>
+        <a href="#resume">CV / Resume</a>
+        <a href="#contact">Contact</a>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <section id="home" class="hero section">
+      <div class="particles" aria-hidden="true"></div>
+      <div class="hero-copy reveal">
+        <p class="eyebrow">B.Tech CSE • Cloud Computing</p>
+        <h1>Building <span>digital experiences</span> that solve real problems.</h1>
+        <p class="hero-text">
+          I'm Dharmender Singh, a Computer Science student passionate about cloud systems,
+          web development and AI-powered applications.
+        </p>
+        <div class="hero-actions">
+          <a class="btn primary" href="#projects">Explore Projects <span>↗</span></a>
+          <a class="btn ghost" href="#contact">Let's Connect</a>
+        </div>
+        <div class="quick-stats">
+          <div><strong>06+</strong><small>Projects</small></div>
+          <div><strong>10+</strong><small>Technologies</small></div>
+          <div><strong>∞</strong><small>Ideas to Build</small></div>
+        </div>
+      </div>
+
+      <div class="hero-photo reveal delay-2">
+        <div class="photo-ring"></div>
+        <div class="photo-card">
+          <img src="assets/profile.jpg" alt="Dharmender Singh in a black suit" />
+          <div class="photo-badge"><span class="dot"></span> Available for opportunities</div>
+        </div>
+        <div class="float-card fc-one"><b>Cloud</b><span>AWS • GCP</span></div>
+        <div class="float-card fc-two"><b>AI / ML</b><span>Python • OpenCV</span></div>
+      </div>
+    </section>
+
+    <section id="about" class="section">
+      <div class="section-heading reveal">
+        <p class="eyebrow">01 / About</p>
+        <h2>Turning curiosity into <span>working software.</span></h2>
+      </div>
+      <div class="about-grid">
+        <div class="about-card reveal">
+          <p>
+            I am a B.Tech Computer Science student specializing in Cloud Computing at
+            Lovely Professional University. I enjoy designing practical applications,
+            learning modern technologies and turning ideas into projects that feel useful
+            in the real world.
+          </p>
+          <p>
+            My interests span cloud computing, full-stack web development, AI/ML,
+            databases and software engineering.
+          </p>
+        </div>
+        <div class="timeline reveal delay-1">
+          <div class="timeline-item"><span>Education</span><b>B.Tech — Computer Science & Engineering</b><small>Lovely Professional University</small></div>
+          <div class="timeline-item"><span>Focus</span><b>Cloud • Web • AI/ML</b><small>Building practical, deployable solutions</small></div>
+          <div class="timeline-item"><span>Approach</span><b>Learn → Build → Improve</b><small>Problem-solving with continuous experimentation</small></div>
+        </div>
+      </div>
+    </section>
+
+    <section id="skills" class="section dark-section">
+      <div class="section-heading reveal">
+        <p class="eyebrow">02 / Skills</p>
+        <h2>My technical <span>toolbox.</span></h2>
+      </div>
+      <div class="skills-grid">
+        <div class="skill-card reveal"><div class="skill-icon">01</div><h3>Languages</h3><p>C++ • Python • C • Java • JavaScript • SQL</p></div>
+        <div class="skill-card reveal delay-1"><div class="skill-icon">02</div><h3>Web & Backend</h3><p>HTML • CSS • JavaScript • Flask • Java</p></div>
+        <div class="skill-card reveal delay-2"><div class="skill-icon">03</div><h3>Cloud & Database</h3><p>AWS • Google Cloud • SQLite • MySQL • MS SQL Server</p></div>
+        <div class="skill-card reveal"><div class="skill-icon">04</div><h3>AI / ML</h3><p>TensorFlow • PyTorch • YOLOv8 • OpenCV • NLP</p></div>
+        <div class="skill-card reveal delay-1"><div class="skill-icon">05</div><h3>Tools</h3><p>Git • GitHub • Linux • VS Code • Render</p></div>
+        <div class="skill-card reveal delay-2"><div class="skill-icon">06</div><h3>Soft Skills</h3><p>Problem-Solving • Team Player • Adaptability • Communication</p></div>
+      </div>
+    </section>
+
+    <section id="projects" class="section">
+      <div class="section-heading reveal">
+        <p class="eyebrow">03 / Projects</p>
+        <h2>Things I've <span>built.</span></h2>
+      </div>
+      <div class="project-tools reveal" aria-label="Filter projects">
+        <label class="project-search">
+          <span class="sr-only">Search projects</span>
+          <input id="project-search" type="search" placeholder="Search projects or technologies…" autocomplete="off" />
+          <span aria-hidden="true">⌕</span>
+        </label>
+        <div class="project-filters" role="group" aria-label="Filter by category">
+          <button class="filter-chip active" type="button" data-filter="all" aria-pressed="true">All</button>
+          <button class="filter-chip" type="button" data-filter="ai" aria-pressed="false">AI / ML</button>
+          <button class="filter-chip" type="button" data-filter="web" aria-pressed="false">Web</button>
+          <button class="filter-chip" type="button" data-filter="cloud" aria-pressed="false">Cloud</button>
+        </div>
+        <p class="project-count" id="project-count" aria-live="polite">Showing 6 projects</p>
+      </div>
+      <div class="projects-grid">
+        <article class="project reveal" data-category="ai web">
+          <div class="project-top"><span>01</span><a href="https://github.com/DharmenderSingh1235" target="_blank" rel="noopener">GitHub ↗</a></div>
+          <h3>AI Internship Recommendation Engine</h3>
+          <p>Personalized internship discovery using student skills, interests, qualifications and preferences.</p>
+          <div class="tags"><span>AI/ML</span><span>Python</span><span>Web</span></div>
+        </article>
+        <article class="project reveal delay-1" data-category="web">
+          <div class="project-top"><span>02</span><a href="https://github.com/DharmenderSingh1235" target="_blank" rel="noopener">GitHub ↗</a></div>
+          <h3>Secure File Management System</h3>
+          <p>Secure file storage and user workflows with authentication, bcrypt password hashing and Fernet encryption.</p>
+          <div class="tags"><span>Flask</span><span>SQLite</span><span>Cryptography</span></div>
+        </article>
+        <article class="project reveal delay-2" data-category="cloud web">
+          <div class="project-top"><span>03</span><a href="https://github.com/DharmenderSingh1235/cloud-file" target="_blank" rel="noopener">GitHub ↗</a></div>
+          <h3>Cloud-Based Disaster Backup</h3>
+          <p>Backup workflow using compression, AWS S3 storage, SQLite history and a local demo mode.</p>
+          <div class="tags"><span>AWS S3</span><span>Flask</span><span>Python</span></div>
+        </article>
+        <article class="project reveal" data-category="web">
+          <div class="project-top"><span>04</span><a href="https://github.com/DharmenderSingh1235/event-staff-management" target="_blank" rel="noopener">GitHub ↗</a></div>
+          <h3>Event Staff Management</h3>
+          <p>Staff booking and management platform with registration, booking requests and admin workflows.</p>
+          <div class="tags"><span>HTML</span><span>CSS</span><span>JavaScript</span></div>
+        </article>
+        <article class="project reveal delay-1" data-category="web">
+          <div class="project-top"><span>05</span><a href="https://github.com/DharmenderSingh1235/hotal-mangament-system" target="_blank" rel="noopener">GitHub ↗</a></div>
+          <h3>Hotel Management System</h3>
+          <p>Planned full-stack hotel platform covering rooms, bookings, customers, billing and revenue reports.</p>
+          <div class="tags"><span>Java</span><span>DSA</span><span>MySQL</span></div>
+        </article>
+        <article class="project reveal delay-2" data-category="ai web">
+          <div class="project-top"><span>06</span><a href="https://github.com/DharmenderSingh1235" target="_blank" rel="noopener">GitHub ↗</a></div>
+          <h3>Hostel Allocation & Matching</h3>
+          <p>Smart allocation concept for room/bed inventory, preferences, rules and roommate matching.</p>
+          <div class="tags"><span>JavaScript</span><span>Backend</span><span>Rules Engine</span></div>
+        </article>
+      </div>
+      <p class="project-empty" hidden>No projects match that search. Try another term or category.</p>
+    </section>
+
+    <section id="certificates" class="section certificate-section">
+      <div class="section-heading reveal">
+        <p class="eyebrow">04 / Certificates</p>
+        <h2>Learning beyond the <span>classroom.</span></h2>
+      </div>
+      <div class="cert-list">
+        <div class="cert reveal"><span>01</span><div><h3>Linux Commands and Shell Scripting</h3><p>Skillera • Oct 2024</p></div></div>
+        <div class="cert reveal delay-1"><span>02</span><div><h3>Communication Skills for Successful Career</h3><p>SDC — Lovely Professional University • Oct 2024</p></div></div>
+        <div class="cert reveal delay-2"><span>03</span><div><h3>Database Management System — Part 1</h3><p>Infosys</p></div></div>
+        <div class="cert reveal"><span>04</span><div><h3>Introduction to DSA with Proctored Exam</h3><p>Coding Tantra • 15+ hours</p></div></div>
+        <div class="cert reveal delay-1"><span>05</span><div><h3>How to Crack Telephonic and Virtual Interviews</h3><p>LaMiCons • Mukesh Virmani</p></div></div>
+      </div>
+    </section>
+
+
+    <section id="resume" class="section resume-section">
+      <div class="resume-card reveal">
+        <div>
+          <p class="eyebrow">05 / CV & Resume</p>
+          <h2>Want to know more <span>about my journey?</span></h2>
+          <p>View or download my CV to explore my education, technical skills, projects and certifications.</p>
+        </div>
+        <div class="resume-actions">
+          <a class="btn primary" href="assets/Dharmender_Singh_CV.pdf" target="_blank" rel="noopener">View CV ↗</a>
+          <a class="btn ghost" href="assets/Dharmender_Singh_CV.pdf" download>Download CV ↓</a>
+        </div>
+        <p class="edit-note">Add your CV PDF to the assets folder and name it <b>Dharmender_Singh_CV.pdf</b>.</p>
+      </div>
+    </section>
+
+    <section id="contact" class="section contact-section">
+      <div class="contact-box reveal">
+        <p class="eyebrow">06 / Contact</p>
+        <h2>Have an idea? <span>Let's build it.</span></h2>
+        <p>I'm open to projects, internships, collaborations and opportunities to learn and create.</p>
+        <p class="contact-phone"><span>Mobile No.</span><a href="tel:+918853535112">+91 88535 35112</a></p>
+        <div class="contact-actions">
+          <a class="btn primary" href="mailto:your-email@example.com">Email Me ↗</a>
+          <a class="btn ghost" href="https://github.com/DharmenderSingh1235" target="_blank" rel="noopener">GitHub ↗</a>
+          <a class="btn ghost" href="https://www.linkedin.com/" target="_blank" rel="noopener">LinkedIn ↗</a>
+        </div>
+        <p class="edit-note">Replace <b>your-email@example.com</b> with your actual email and update the LinkedIn link with your profile URL before publishing.</p>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2026 Dharmender Singh. Built with HTML, CSS & JavaScript.</p>
+    <a href="#home">Back to top ↑</a>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
